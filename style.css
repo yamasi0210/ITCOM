@@ -1,0 +1,297 @@
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif; /*ゴシック体*/
+  color: #ffffff; /*文字白*/
+  background-color: #16161a; /*背景黒*/
+}
+
+header {
+  font-weight: 700;
+  position: absolute; /*画面いっぱい*/
+  width: 100%;
+  z-index: 3;
+}
+header .container { /*太文字*/
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto; /*中央*/
+}
+header .row {
+  display: flex; /*about news ccontact 右*/
+  justify-content: space-between; /*about news ccontact 右*/
+  align-items: center; /*上から下*/
+  height: 60px; /*上から下*/
+}
+header .logo {
+  font-size: 24px;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin-left: 30px; /*ナビゲーション横幅*/
+  font-size: 14px;
+  letter-spacing: 1px; /*文字文字の幅が変わる*/
+}
+.section1 {
+  background-image: url(image1.jpg); /*背景画像*/
+  background-position: center bottom;
+  background-size: cover; /*綺麗になっている*/
+  height: 100vh; /*画面いっぱい*/
+  display: flex;
+  align-items: center;
+}
+.section1 .filter {
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /*画像の背景黒*/
+  opacity: 0.5;
+  position: absolute; /*暗くしてる原因*/
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.section1 .container { 
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center; /*メイン真ん中*/
+  z-index: 2;/*文字の明るさ*/
+}
+.section1 .heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2cb67d; /*p文字色*/
+}
+.section1 h1 {
+  font-size: 48px; /*未来を作るフォントサイズ大きさ*/
+  font-weight: 700; /*未来を作る文字の太さ*/
+  margin-bottom: 40px; /*h1とpの間余白*/
+}
+.section1 .text {
+  font-size: 20px;
+  margin-bottom: 40px; /*外側下*/
+}
+.section1 a {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 40px 20px; /*紫四角余白*/
+  display: inline-block;
+  background-color: #7f5af0; /*ボタン背景紫*/
+  border-radius: 6px; /*丸くする*/
+  letter-spacing: 2px;
+  transition-duration: .2s; /*時間２秒*/
+}
+.section1 a:hover {
+  background-color: #2cb67d;
+}
+
+.section2 { /*四角*/
+  margin-bottom: 45px;
+}
+.section2 .container { /*四角*/
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section2 .row { /*四角*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transform: translateY(-48px);
+  z-index: 2;
+  position: relative;
+}
+.section2 .col { /*四角*/
+  background-color: #ffffff; /*四角背景白*/
+  width: 32%; /*３分割*/
+  color: #16161a; /*文字黒色*/
+  padding: 20px; /*四角内側余白*/
+}
+.section2 img {
+  background-color: #7f5af0;
+  width: 60px;
+  padding: 10px;
+  border-radius: 9px;
+  margin-bottom: 16px;
+}
+.section2 h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.section2 hr { /*🟢線*/
+  border: solid 2px #2cb67d;
+  margin-bottom: 16px;
+  width: 48px;
+}
+.section2 .text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.section3 {
+  padding-top: 45px;
+  margin-bottom: 60px;
+}
+.section3 .container {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section3 .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.section3 .col {
+  width: 46%;
+}
+.section3 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.3;
+}
+.section3 hr {
+  border: solid 2px #2cb67d;
+  margin-bottom: 20px;
+  width: 60px;
+}
+.section3 .text {
+  line-height: 1.5;
+}
+.section4 {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.section4 .container {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section4 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section4 hr {
+  border: solid 2px #2cb67d;
+  margin: 0 auto 40px;
+  width: 60px;
+}
+.section4 ul {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.section4 li {
+  border: solid 1px #ffffff;
+  margin-bottom: 20px;
+  padding: 16px 24px;
+}
+.section4 .date {
+  color: #7f5af0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.section5 {
+  padding-top: 60px;
+  margin-bottom: 130px;
+}
+.section5 .container {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section5 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section5 hr {
+  border: solid 2px #2cb67d;
+  margin: 0 auto 40px;
+  width: 60px;
+}
+.section5 form {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.section5 label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.section5 input, .section5 textarea {
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 30px;
+  color: #16161a;
+}
+.section5 input[type=submit] {
+  text-align: center;
+  background-color: #7f5af0;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 20px 16px 22px;
+  letter-spacing: 6px;
+  border-radius: 6px;
+  transition-duration: .2s;
+}
+.section5 input[type=submit]:hover {
+  background-color: #2cb67d;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  color: #16161a;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+/* 送信完了ページ */
+.section6 {
+  padding: 260px 0 380px;
+}
+.section6 .container {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section6 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section6 hr {
+  border: solid 2px #2cb67d;
+  margin: 0 auto 40px;
+  width: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .section1 .container {
+    width: 98%;
+  }
+  .section1 h1 {
+    font-size: 27px;
+  }
+  .section2 .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section3 .col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
